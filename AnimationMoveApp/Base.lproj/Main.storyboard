@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationMoveApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qL-au-2em">
+                                <rect key="frame" x="91" y="162" width="233" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9wh-lA-Wrh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRC-Lm-8a7">
+                                <rect key="frame" x="91" y="289" width="233" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="tEN-cO-Waq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xah-Ju-Kjq">
+                                <rect key="frame" x="90" y="412" width="233" height="157"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="xah-Ju-Kjq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="1hx-wI-seu"/>
+                            <constraint firstItem="8qL-au-2em" firstAttribute="trailing" secondItem="DRC-Lm-8a7" secondAttribute="trailing" id="4Ol-dV-9hm"/>
+                            <constraint firstItem="8qL-au-2em" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="AEr-if-LF5"/>
+                            <constraint firstItem="xah-Ju-Kjq" firstAttribute="top" secondItem="DRC-Lm-8a7" secondAttribute="bottom" constant="89" id="CS5-7Z-6HP"/>
+                            <constraint firstItem="8qL-au-2em" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="EqY-RH-92M"/>
+                            <constraint firstItem="xah-Ju-Kjq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FWh-yE-eCB"/>
+                            <constraint firstItem="DRC-Lm-8a7" firstAttribute="top" secondItem="8qL-au-2em" secondAttribute="bottom" constant="67" id="Ux6-OQ-fbv"/>
+                            <constraint firstItem="8qL-au-2em" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gtH-f0-Vog"/>
+                            <constraint firstItem="8qL-au-2em" firstAttribute="leading" secondItem="DRC-Lm-8a7" secondAttribute="leading" id="hKa-x3-Tuq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xah-Ju-Kjq" secondAttribute="bottom" constant="293" id="q9A-BD-aGJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="xah-Ju-Kjq" id="B3C-kR-41g"/>
+                        <outlet property="myLabel" destination="8qL-au-2em" id="lCI-au-FXs"/>
+                        <outlet property="myTextField" destination="DRC-Lm-8a7" id="dk0-hD-OZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="37.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
